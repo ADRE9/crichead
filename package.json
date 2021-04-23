@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/ADRE9/crichead#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "concurrently": "^6.0.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.5"
   }
 }

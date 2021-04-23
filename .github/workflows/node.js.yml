@@ -5,9 +5,9 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ master , dev-arshie ,dev-lopa ,dev-srs ]
+    branches: [ master , devArshie ,devLopa ,devSrs ]
   pull_request:
-    branches: [ master ]
+    branches: [ master , devArshie ,devLopa ,devSrs ]
 
 jobs:
   build:

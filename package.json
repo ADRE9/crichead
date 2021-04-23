@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ADRE9/crichead/issues"
   },
-  "homepage": "https://github.com/ADRE9/crichead#readme"
+  "homepage": "https://github.com/ADRE9/crichead#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

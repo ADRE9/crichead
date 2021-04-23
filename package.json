@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "client-install": "npm install --prefix client",
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm rum start --prefix client",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "dev": "concurrently -n 'server,client' -c 'red,green' \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -20,5 +25,8 @@
     "concurrently": "^6.0.2",
     "express": "^4.17.1",
     "mongoose": "^5.12.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }

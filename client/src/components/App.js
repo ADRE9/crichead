@@ -2,8 +2,7 @@ import React from 'react';
 import './App.css';
 import {facebookProvider} from "../configs/firebaseHelper";
 import  {BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import Home from '../Pages/LandingPage';
-import { SigninPage } from '../Pages/LandingPage/signin/SignIn';
+import SignUpWithEmailPage from '../Pages/SignUpWithEmailPage';
 import Navbar from "./Navbar";
 
 class App extends React.Component {
@@ -13,8 +12,7 @@ class App extends React.Component {
       <Router>
         <Navbar />
         <Switch>
-          <Route path="/" component={Home} exact/>
-          <Route path="/signin" component={SigninPage} exact/>
+          <Route path="/signin" component={SignUpWithEmailPage} exact/>
         </Switch> 
       </Router>
     )

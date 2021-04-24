@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import './App.css';
 import { BrowserRouter } from 'react-router-dom';
 import {facebookProvider} from "../configs/firebaseHelper";
-
+import  {BrowserRouter as Router} from "react-router-dom";
 class App extends React.Component {
 
   // setUpRecaptcha = () => {
@@ -22,7 +22,10 @@ class App extends React.Component {
 
   render() {
     return (
-      <Navbar/>
+      <Router>
+        <Navbar/>
+      </Router>
+      
     )
   }
 };

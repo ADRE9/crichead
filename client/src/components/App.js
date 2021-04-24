@@ -3,7 +3,7 @@ import './App.css';
 import {facebookProvider} from "../configs/firebaseHelper";
 import  {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Home from '../Pages/LandingPage';
-import { SigninPage } from '../Pages/LandingPage/signin/signin';
+import { SigninPage } from '../Pages/LandingPage/signin/SignIn';
 import Navbar from "./Navbar";
 
 class App extends React.Component {

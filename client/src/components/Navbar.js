@@ -1,25 +1,15 @@
 import React from 'react';
 // import { NavLink } from 'react-router-dom';
-import {FaBars} from 'react-icons/fa';
-import {Nav, NavbarContainer,NavLogo,MobileIcon,NavItem,NavMenu,NavLinks,NavBtn,NavBtnLink} from './NavbarElements';
+import { Nav, NavbarContainer, NavLogo } from './NavbarElements';
+import SignOutButton from "./SignOutButton";
 
 const Navbar = () => {
     return (
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to='/'>Dream11</NavLogo>
-                <MobileIcon>
-                    <FaBars/>
-                </MobileIcon>
-                <NavMenu>
-                    <NavItem>
-                        <NavLinks to ='signup'>Sign Up</NavLinks>
-                    </NavItem>
-                </NavMenu>
-                <NavBtn>
-                    <NavBtnLink to="/signin">Sign In</NavBtnLink>
-                </NavBtn>
+                    <NavLogo to='/'>CricHead</NavLogo>
+                    <SignOutButton/>
                 </NavbarContainer>
                 
             </Nav>

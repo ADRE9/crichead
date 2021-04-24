@@ -1,14 +1,17 @@
 import firebase from 'firebase';
+//import "firebase/auth";
 
-const firebaseConfig = {
-  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.REACT_APP_FIREBASE_APP_ID
+const app = {
+    apiKey: "AIzaSyBJ92MLbKfKKHIQYzvpCY-frcLlHB4D7TE",
+    authDomain: "crichead-5e6a4.firebaseapp.com",
+    projectId: "crichead-5e6a4",
+    storageBucket: "crichead-5e6a4.appspot.com",
+    messagingSenderId: "223351237458",
+    appId: "1:223351237458:web:72af08f46785c1b970288b"
 };
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+// Initialize Firebase export const auth=
+firebase.initializeApp(app);
+
+//export const auth=firebase.initializeApp(app).auth();
 
 export default firebase;

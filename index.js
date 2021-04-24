@@ -1,6 +1,10 @@
 const express = require('express');
 
+
 const app = express();
+
+//connect to DB
+require("./db/mongoose");
 
 //Serve static assets if in Production
 if (process.env.NODE_ENV === "production") {

@@ -1,10 +1,11 @@
 const mongoose = require("mongoose");
 
 const connectDB = async () => {
+  var dbURI = "mongodb+srv://m001-student:<password>@crichead.few7u.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
   // Create the database connection
   try {
-    await mongoose.connect("mongodb+srv://m001-student:<password>@crichead.few7u.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
+    await mongoose.connect(dbURI, {
       useNewUrlParser: true,
       useCreateIndex: true,
       useUnifiedTopology: true,
